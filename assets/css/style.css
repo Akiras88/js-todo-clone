@@ -32,7 +32,7 @@ h1 {
 
 /* todo list */
 .todo {
-    margin-top:30px;
+    margin: 30px 0;
 }
 .todo li {
     width: 450px;
@@ -45,23 +45,25 @@ h1 {
     display: flex;
     justify-content: space-between;
 }
-.icon i {
-    font-size: 14px;
-    cursor: pointer;
-}
 .todo li i {
     opacity: 0.5;
     transition: opacity .4s;
+    font-size: 16px;
     cursor: pointer;
 }
 .todo li i:hover {
     opacity: 1;
 }
+
+.todo li .completed {
+    text-decoration: line-through; /* jQuery*/
+    color: #fff;
+}
 /* input add task */
 .add-element {
     width: 450px;
     height: 45px;
-    margin: 10px;
+    margin: 15px 10px 30px;
     padding: 0 10px;
     font-size: 17px;
     border: 0;
