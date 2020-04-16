@@ -44,6 +44,7 @@ h1 {
     font-size: 20px;
     display: flex;
     justify-content: space-between;
+    cursor: pointer;
 }
 .todo li i {
     opacity: 0.5;
@@ -55,9 +56,8 @@ h1 {
     opacity: 1;
 }
 
-.todo li .completed {
+.todo li.completed {
     text-decoration: line-through; /* jQuery*/
-    color: #fff;
 }
 /* input add task */
 .add-element {
